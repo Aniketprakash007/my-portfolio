@@ -48,14 +48,15 @@ export default function Portfolio() {
       github: '#'
     },
     {
-      title: 'Gamified Education Platform',
-      description: 'SIH 2024 project featuring interactive learning modules, achievement system, and progress tracking',
-      tech: ['Vue', 'Express', 'MySQL', 'Socket.IO'],
-      featured: true,
-      badge: 'Featured in SIH 2024',
-      demo: 'sih2025-main.vercel.app',
-      github: 'https://github.com/Aniketprakash007/sih2025-main'
-    },
+  title: 'Gamified Education Platform',
+  description: 'SIH 2024 project featuring interactive learning modules...',
+  tech: ['Vue', 'Express', 'MySQL', 'Socket.IO'],
+  featured: true,
+  badge: 'Featured in SIH 2024',
+  demo: 'https://sih2025-main.vercel.app',
+  github: 'https://github.com/Aniketprakash007/sih2025-main'
+},
+
     {
       title: 'Real-Time Chat App',
       description: 'WebSocket-based chat application with rooms, typing indicators, and message history',

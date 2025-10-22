@@ -44,8 +44,8 @@ export default function Portfolio() {
       description: 'Full-stack e-commerce solution with real-time inventory, payment integration, and admin dashboard',
       tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
       featured: true,
-      demo: '#',
-      github: '#'
+     demo: 'https://sih2025-main.vercel.app',
+  github: 'https://github.com/Aniketprakash007/sih2025-main'
     },
     {
   title: 'Gamified Education Platform',
@@ -61,8 +61,8 @@ export default function Portfolio() {
       title: 'Real-Time Chat App',
       description: 'WebSocket-based chat application with rooms, typing indicators, and message history',
       tech: ['React', 'Socket.IO', 'Node.js'],
-      demo: '#',
-      github: '#'
+     demo: 'https://sih2025-main.vercel.app',
+  github: 'https://github.com/Aniketprakash007/sih2025-main'
     }
   ];
 

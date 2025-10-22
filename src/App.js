@@ -216,11 +216,12 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <div className="flex gap-4">
-                    <a href={project.demo} className="flex items-center gap-2 text-emerald-500 hover:underline">
-                      <ExternalLink size={16} /> Live Demo
-                    </a>
-                    <a href={project.github} className="flex items-center gap-2 text-emerald-500 hover:underline">
-                      <Github size={16} /> GitHub
+                   <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-emerald-500 hover:underline">
+  <ExternalLink size={16} /> Live Demo
+</a>
+<a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-emerald-500 hover:underline">
+  <Github size={16} /> GitHub
+</a>
                     </a>
                   </div>
                 </div>

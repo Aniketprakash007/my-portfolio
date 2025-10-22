@@ -215,14 +215,25 @@ export default function Portfolio() {
                       <span key={i} className="bg-gray-700 px-2 py-1 rounded text-xs">{tech}</span>
                     ))}
                   </div>
-                  <div className="flex gap-4">
-                   <a href={project.demo} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-emerald-500 hover:underline">
-  <ExternalLink size={16} /> Live Demo
-</a>
-<a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-emerald-500 hover:underline">
-  <Github size={16} /> GitHub
-</a>
-                  </div>
+                <div className="flex gap-4">
+  <a
+    href={project.demo}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 text-emerald-500 hover:underline"
+  >
+    <ExternalLink size={16} /> Live Demo
+  </a>
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 text-emerald-500 hover:underline"
+  >
+    <Github size={16} /> GitHub
+  </a>
+</div>
+
                 </div>
               </div>
             ))}

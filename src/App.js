@@ -53,8 +53,8 @@ export default function Portfolio() {
       tech: ['Vue', 'Express', 'MySQL', 'Socket.IO'],
       featured: true,
       badge: 'Featured in SIH 2024',
-      demo: '#',
-      github: '#'
+      demo: 'sih2025-main.vercel.app',
+      github: 'https://github.com/Aniketprakash007/sih2025-main'
     },
     {
       title: 'Real-Time Chat App',

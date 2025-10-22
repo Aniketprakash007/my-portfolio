@@ -222,7 +222,6 @@ export default function Portfolio() {
 <a href={project.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-emerald-500 hover:underline">
   <Github size={16} /> GitHub
 </a>
-                    </a>
                   </div>
                 </div>
               </div>

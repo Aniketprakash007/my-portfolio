@@ -7,7 +7,7 @@ export default function Portfolio() {
   const [typeIndex, setTypeIndex] = useState(0);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [formStatus, setFormStatus] = useState('');
-  const roles = ['Full Stack Developer', 'Problem Solver', 'Chess Enthusiast', 'Dancer'];
+  const roles = ['Full Stack Developer', 'Problem Solver', 'Chess Enthusiast', 'Tech Blogger'];
   const [currentRole, setCurrentRole] = useState(0);
 
   useEffect(() => {
@@ -38,43 +38,44 @@ export default function Portfolio() {
     Other: ['Git', 'Linux', 'REST APIs']
   };
 
-  const projects = [
+const projects = [
     {
       title: 'E-Commerce Platform',
       description: 'Full-stack e-commerce solution with real-time inventory, payment integration, and admin dashboard',
-      tech: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+      tech: ['React', 'Node.js', 'MongoDB', 'Stripe' , 'APIs' ,'axios','express'],
       featured: true,
-     demo: 'https://sih2025-main.vercel.app',
-  github: 'https://github.com/Aniketprakash007/sih2025-main'
+      demo: '#',
+      github: 'https://github.com/Aniketprakash007?tab=repositories',
     },
     {
-  title: 'Gamified Education Platform',
-  description: 'SIH 2024 project featuring interactive learning modules...',
-  tech: ['Vue', 'Express', 'MySQL', 'Socket.IO'],
-  featured: true,
-  badge: 'Featured in SIH 2024',
-  demo: 'https://sih2025-main.vercel.app',
-  github: 'https://github.com/Aniketprakash007/sih2025-main'
-},
-
+      title: 'Gamified Environmental Education Platform',
+      description: 'SIH 2025 project featuring interactive learning modules, achievement system, and progress tracking',
+      tech: ['React', 'Tailwind CSS', 'MongoDB', 'Node.js' ,'Express' , 'APIs'],
+      featured: true,
+      badge: 'Featured in SIH 2025',
+      demo: 'https://sih2025-main.vercel.app',
+      github: 'https://github.com/Aniketprakash007/sih2025-main',
+       image: 'https://i.ibb.co/84Q5FCfN/Screenshot-2025-10-24-141848.png' 
+    },
     {
       title: 'Real-Time Chat App',
       description: 'WebSocket-based chat application with rooms, typing indicators, and message history',
       tech: ['React', 'Socket.IO', 'Node.js'],
-     demo: 'https://sih2025-main.vercel.app',
-  github: 'https://github.com/Aniketprakash007/sih2025-main'
+      demo: '#',
+      github: 'https://github.com/Aniketprakash007?tab=repositories',
+     
     }
   ];
-
   const achievements = [
+     { icon: '💻', title: 'DSA Expert', desc: '700+ problems solved (gfg + leetcode)', color: 'bg-green-500' },
     { icon: '♟️', title: 'Chess Master', desc: '2400+ ELO | Top 11,000 Global', color: 'bg-blue-500' },
-    { icon: '💃', title: 'Dancer', desc: '2 years of dedicated practice', color: 'bg-purple-500' },
-    { icon: '🧠', title: 'DSA Expert', desc: '500+ problems solved', color: 'bg-green-500' }
+    { icon: '🕺', title: 'Dancer', desc: '2 years of dedicated practice', color: 'bg-purple-500' }
+   
   ];
 
   const stats = [
-    { label: 'Projects Built', value: '15+' },
-    { label: 'Lines of Code', value: '50K+' },
+    { label: 'Projects Built', value: '10+' },
+    { label: 'Lines of Code', value: '20K+' },
     { label: 'GitHub Commits', value: '1000+' },
     { label: 'Hours Coded', value: '2000+' }
   ];
@@ -162,9 +163,9 @@ export default function Portfolio() {
           </div>
           <div className="mt-12 space-y-6">
             {[
-              { year: '2023', event: 'Started mastering DSA - 500+ problems solved' },
+              { year: '2024', event: 'Started mastering DSA - 700+ problems solved (gfg + leetcode)' },
               { year: '2024', event: 'Built full-stack applications with modern tech stacks' },
-              { year: '2024', event: 'Participated in Smart India Hackathon' }
+              { year: '2025', event: 'Participated in Smart India Hackathon' }
             ].map((item, idx) => (
               <div key={idx} className="flex gap-4 items-center">
                 <div className="bg-emerald-500 text-white px-4 py-2 rounded-full font-bold">{item.year}</div>
@@ -199,9 +200,20 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-8">
             {projects.map((project, idx) => (
               <div key={idx} className={`${cardBg} rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition transform hover:-translate-y-2`}>
-                <div className="h-48 bg-gradient-to-br from-emerald-500 to-blue-500 flex items-center justify-center">
-                  <Code size={64} className="text-white opacity-50" />
-                </div>
+                <div className="h-48 overflow-hidden">
+  {project.image ? (
+    <img
+      src={project.image}
+      alt={project.title}
+      className="w-full h-full object-cover transition-transform duration-300 hover:scale-110"
+    />
+  ) : (
+    <div className="h-full bg-gradient-to-br from-emerald-500 to-blue-500 flex items-center justify-center">
+      <Code size={64} className="text-white opacity-50" />
+    </div>
+  )}
+</div>
+
                 <div className="p-6">
                   {project.badge && (
                     <span className="bg-yellow-500 text-black text-xs px-3 py-1 rounded-full font-bold mb-2 inline-block">
@@ -215,25 +227,14 @@ export default function Portfolio() {
                       <span key={i} className="bg-gray-700 px-2 py-1 rounded text-xs">{tech}</span>
                     ))}
                   </div>
-                <div className="flex gap-4">
-  <a
-    href={project.demo}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 text-emerald-500 hover:underline"
-  >
-    <ExternalLink size={16} /> Live Demo
-  </a>
-  <a
-    href={project.github}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="flex items-center gap-2 text-emerald-500 hover:underline"
-  >
-    <Github size={16} /> GitHub
-  </a>
-</div>
-
+                  <div className="flex gap-4">
+                    <a href={project.demo} className="flex items-center gap-2 text-emerald-500 hover:underline">
+                      <ExternalLink size={16} /> Live Demo
+                    </a>
+                    <a href={project.github} className="flex items-center gap-2 text-emerald-500 hover:underline">
+                      <Github size={16} /> GitHub
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}
@@ -308,20 +309,20 @@ export default function Portfolio() {
             {formStatus && <p className="mt-4 text-center text-emerald-500">{formStatus}</p>}
           </div>
           <div className="flex justify-center gap-6 mt-12">
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer" className={`p-4 rounded-full ${theme === 'dark' ? 'bg-gray-700' : 'bg-gray-200'} hover:bg-emerald-500 transition`}>
+            <a href="https://github.com/Aniketprakash007?tab=repositories" target="_blank" rel="noopener noreferrer" className={`p-4 rounded-full ${theme === 'dark' ? 'bg-gray-700' : 'bg-gray-200'} hover:bg-emerald-500 transition`}>
               <Github size={24} />
             </a>
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className={`p-4 rounded-full ${theme === 'dark' ? 'bg-gray-700' : 'bg-gray-200'} hover:bg-emerald-500 transition`}>
+            <a href="https://www.linkedin.com/in/aniket-prakash-goyal-13183b289/" target="_blank" rel="noopener noreferrer" className={`p-4 rounded-full ${theme === 'dark' ? 'bg-gray-700' : 'bg-gray-200'} hover:bg-emerald-500 transition`}>
               <Linkedin size={24} />
             </a>
-            <a href="mailto:aniket@example.com" className={`p-4 rounded-full ${theme === 'dark' ? 'bg-gray-700' : 'bg-gray-200'} hover:bg-emerald-500 transition`}>
+            <a href="https://mail.google.com/mail/u/0/#inbox" className={`p-4 rounded-full ${theme === 'dark' ? 'bg-gray-700' : 'bg-gray-200'} hover:bg-emerald-500 transition`}>
               <Mail size={24} />
             </a>
           </div>
         </div>
       </section>
       <footer className={`py-8 px-6 text-center border-t ${theme === 'dark' ? 'border-gray-700' : 'border-gray-300'}`}>
-        <p className="mb-2">Built from scratch with ❤️ using React, Node.js, and Tailwind CSS</p>
+        <p className="mb-2">Built from scratch with using React, Node.js, and Tailwind CSS</p>
         <p className="text-emerald-500 italic">If you have scrolled this far, we should probably work together.</p>
       </footer>
     </div>

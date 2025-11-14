@@ -327,4 +327,4 @@ const projects = [
       </footer>
     </div>
   );
-}
+} // complete

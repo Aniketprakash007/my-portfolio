@@ -811,9 +811,4 @@ const SkillReelApp = () => {
     </div>
   );
 };
-
-<<<<<<< HEAD
 export default SkillReelApp;
-=======
-export default SkillReelApp;
->>>>>>> db045343f02a91c76006dac133dccf471f9b4dfe

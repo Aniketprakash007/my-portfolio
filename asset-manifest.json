@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Aniketprakash007/Skill-reel/static/css/main.df720133.css",
-    "main.js": "/Aniketprakash007/Skill-reel/static/js/main.22b65ed2.js",
-    "static/js/453.ececc0a5.chunk.js": "/Aniketprakash007/Skill-reel/static/js/453.ececc0a5.chunk.js",
-    "index.html": "/Aniketprakash007/Skill-reel/index.html",
-    "main.df720133.css.map": "/Aniketprakash007/Skill-reel/static/css/main.df720133.css.map",
-    "main.22b65ed2.js.map": "/Aniketprakash007/Skill-reel/static/js/main.22b65ed2.js.map",
-    "453.ececc0a5.chunk.js.map": "/Aniketprakash007/Skill-reel/static/js/453.ececc0a5.chunk.js.map"
+    "main.css": "/Aniketprakash007/my-portfolio/static/css/main.df720133.css",
+    "main.js": "/Aniketprakash007/my-portfolio/static/js/main.daf3f3c5.js",
+    "static/js/453.ececc0a5.chunk.js": "/Aniketprakash007/my-portfolio/static/js/453.ececc0a5.chunk.js",
+    "index.html": "/Aniketprakash007/my-portfolio/index.html",
+    "main.df720133.css.map": "/Aniketprakash007/my-portfolio/static/css/main.df720133.css.map",
+    "main.daf3f3c5.js.map": "/Aniketprakash007/my-portfolio/static/js/main.daf3f3c5.js.map",
+    "453.ececc0a5.chunk.js.map": "/Aniketprakash007/my-portfolio/static/js/453.ececc0a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.df720133.css",
-    "static/js/main.22b65ed2.js"
+    "static/js/main.daf3f3c5.js"
   ]
 }
